@@ -1,0 +1,101 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "id": "aEa2i0000008PniCAE",
+      "homebaseId": "",
+      "enabledDriverApp": true,
+      "warehouseId": "",
+      "bundleTemplateId": "",
+      "bundleAssignmentId": "",
+      "replenished": false
+    }
+  ],
+  "required": [
+    "id",
+    "homebaseId",
+    "enabledDriverApp",
+    "warehouseId",
+    "bundleTemplateId",
+    "bundleAssignmentId",
+    "replenished"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "aEa2i0000008PniCAE"
+      ]
+    },
+    "homebaseId": {
+      "$id": "#/properties/homebaseId",
+      "type": "string",
+      "title": "The homebaseId schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "enabledDriverApp": {
+      "$id": "#/properties/enabledDriverApp",
+      "type": "boolean",
+      "title": "The enabledDriverApp schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "warehouseId": {
+      "$id": "#/properties/warehouseId",
+      "type": "string",
+      "title": "The warehouseId schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "bundleTemplateId": {
+      "$id": "#/properties/bundleTemplateId",
+      "type": "string",
+      "title": "The bundleTemplateId schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "bundleAssignmentId": {
+      "$id": "#/properties/bundleAssignmentId",
+      "type": "string",
+      "title": "The bundleAssignmentId schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        ""
+      ]
+    },
+    "replenished": {
+      "$id": "#/properties/replenished",
+      "type": "boolean",
+      "title": "The replenished schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": false,
+      "examples": [
+        false
+      ]
+    }
+  },
+  "additionalProperties": true
+}

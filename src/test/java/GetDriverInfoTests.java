@@ -1,7 +1,8 @@
-import org.junit.jupiter.api.Test;
 
+import org.junit.jupiter.api.Test;
 import static io.restassured.RestAssured.given;
 import static services.Identity.identity;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 
 public class GetDriverInfoTests {
 
@@ -14,8 +15,7 @@ public class GetDriverInfoTests {
                 .oauth2(accessToken)
                 .when()
                 .get("https://elated-shirley-303f13.netlify.app/.netlify/functions/getDriverInfo")
-                .then()
-                .statusCode(200);
+                .then().assertThat()
+               .body(matchesJsonSchemaInClasspath("schemaDriverInfoDTO.json"));
     }
-
 }
