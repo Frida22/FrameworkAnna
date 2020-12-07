@@ -13,7 +13,7 @@ public class GetDriverInfoTests {
                 .auth()
                 .oauth2(accessToken)
                 .when()
-                .get("https://elated-shirley-303f13.netlify.app/ .netlify/functions/packageOrder")
+                .get("https://elated-shirley-303f13.netlify.app/.netlify/functions/getDriverInfo")
                 .then()
                 .statusCode(200);
     }
